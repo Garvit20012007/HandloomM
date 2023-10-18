@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Threads | Handlooms by Rakhi</title>
+
+    <link rel="stylesheet" href="D:\Handloom Parallax\style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Trendy Threads.</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home<span></span></a>
+            <a href="#">About Us<span></span></a>
+            <a href="https://www.amazon.com/s?k=curtain&rh=n%3A1063306&ref=nb_sb_noss">Our Services<span></span></a>
+            <!--<a href="#">Work with Us<span></span></a>-->
+            <a href="#">Contact Us<span></span></a>
+        </nav>
+    </header>
+
+   <!-- <section class="parallax">
+       
+        
+    </section>-->
+
+
+    <section class="images">
+        <h2 id="text">Handloom by Rakhi</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="D:\Handloom Parallax\images\stars.png" id="stars">
+        <img src="D:\Handloom Parallax\images\moon.png" id="moon">
+        <img src="D:\Handloom Parallax\images\mountains_behind.png" id="mountains_behind">
+        <img src="D:\Handloom Parallax\images\mountains_front.png" id="mountains_front">
+    
+    </section>
+   <div class="sec" id="sec">
+    <h2>Trendy Threads | Handlooms by Rakhi</h2>
+    <p>Trendy Threads is a distinguished handloom company that embodies the essence of artistry, tradition, and modernity in the world of textile manufacturing. Established with a vision to preserve and promote the rich heritage of handloom weaving, Trendy Threads has seamlessly blended age-old craftsmanship with contemporary designs to create exquisite, timeless pieces of fabric. <br></br>
+        At Trendy Threads, every fabric is a work of art, meticulously crafted by skilled artisans who have honed their craft through generations. These artisans bring to life the age-old techniques passed down through their families, combining their expertise with modern design sensibilities. The result is a collection of handwoven fabrics that exude elegance and sophistication. <br></br>
+        In an era of increasing awareness about environmental sustainability, Trendy Threads is committed to responsible production practices. The company places a strong emphasis on using eco-friendly and organic materials, minimizing waste, and employing sustainable manufacturing processes. This dedication to sustainability not only helps protect the environment but also contributes to the ethical and responsible growth of the textile industry.<br></br>
+        Trendy Threads strongly believes in empowering local communities and supporting the livelihoods of artisans. By providing a platform for artisans to showcase their skills and earn a respectable income, the company plays a vital role in the socio-economic development of the regions it operates in. Fair wages and safe working conditions are central to the company's ethos, ensuring a dignified and sustainable livelihood for all involved.<br></br>
+        Trendy Threads houses an innovative design studio where creativity and tradition come together. A team of talented designers and weavers collaborate to experiment with colors, patterns, and textures, pushing the boundaries of handloom artistry. The studio is a hub of creativity, where new designs and ideas are nurtured to keep the brand at the forefront of fashion trends.<br></br>
+        While Trendy Threads has gained international acclaim, the brand remains deeply rooted in its Indian heritage. The company takes pride in promoting the richness of Indian textiles and craftsmanship on the global stage, creating a bridge between traditional values and contemporary style.<br></br>
+        Above all, Trendy Threads is dedicated to providing an unparalleled customer experience. The company strives to understand the unique needs of its customers and ensures that every purchase is a satisfying and delightful experience. With a commitment to quality, reliability, and exceptional service, Trendy Threads continues to win the hearts of its patrons.<br></br>
+        Trendy Threads stands as a beacon of tradition, innovation, and sustainability in the handloom industry. Its commitment to preserving the art of handloom weaving while embracing the future sets it apart, making it a brand that epitomizes elegance and timelessness in every thread.<br></br>
+    </p>
+   </div>
+
+   <script>
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let moutnains_behind = document.getElementById('mountains_behind');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginRight = value * 1.5 + 'px';
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        moutnains_behind.style.top = value * 0.5 + 'px';
+        moutnains_front.style.top = value * 0 + 'px';
+        header.style.top = value * 0.5 + 'px';
+       
+        
+    })
+   </script>
+</body>
+</html>
